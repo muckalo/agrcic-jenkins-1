@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'github.com/muckalo/agrcic-jenkins-1'
+                git branch: 'main', url: 'https://github.com/muckalo/agrcic-jenkins-1.git'
             }
         }
         stage('Set up Virtual Environment') {
