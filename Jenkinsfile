@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://your-git-repo-url'
+                git branch: 'main', url: 'https://github.com/muckalo/agrcic-jenkins-1'
             }
         }
         stage('Install Dependencies') {
