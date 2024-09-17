@@ -19,10 +19,9 @@ pipeline {
             steps {
                 sh '''
                 . venv/bin/activate    # Activate virtual environment
-                pytest                 # Run tests
+                pytest --maxfail=1 --disable-warnings
                 '''
             }
         }
     }
 }
-
